@@ -1,0 +1,829 @@
+@import url(general.css);
+
+/* Animações */
+
+.animate-lettersTitle {
+  overflow: hidden;
+}
+
+.animate-lettersTitle {
+  opacity: 0;
+  animation: animateText 1s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes animateText {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-lettersText {
+  overflow: hidden;
+}
+
+.animate-lettersText {
+  opacity: 0;
+  animation: animateText 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes animateText {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.animate-lettersButton {
+  overflow: hidden;
+}
+
+.animate-lettersButton {
+  opacity: 0;
+  animation: animateText 1s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes animateText {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-boxOne {
+  overflow: hidden;
+}
+
+.animate-boxOne {
+  opacity: 0;
+  animation: animateText 1s forwards;
+  animation-delay: 1.0s;
+}
+
+@keyframes animateText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fim animações */
+
+/* CSS do Cabeçalho Home Mobile*/
+
+header{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  /* Exemplo de uso da fonte na sua página */
+  header h1 {
+    font-family: 'Gopher', sans-serif;
+    font-size: clamp(18px, 3vw, 24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+  }
+
+   .menu_nav{
+    width: 16%;
+  } 
+
+  
+
+  .menu_hamburguer span {
+    height: 3px;
+    width: 35px;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 50px;
+    padding: 2px;
+  }
+
+  .menu_hamburguer span:nth-child(2) {
+    width: 20px;
+    transform: scaleX(-1);
+    transform-origin: center; /* Define o ponto de origem para o centro do elemento */
+  }
+
+  /* Cabeçalho Tablet */
+
+  @media screen and (min-width: 728px) {
+    .menu_nav{
+      width: 10%;
+    } 
+  }
+
+  /* CSS Header e Menu Desktop */
+
+@media screen and (min-width:960px){
+
+  header{
+   padding-top: 30px;
+  }
+
+  header h1{
+    margin-top: 15px;
+  }
+
+  .menu_nav{
+    width: 60%;
+  } 
+
+  .menu_hamburguer{
+      display: none;
+  }
+
+
+
+  .ul_nav{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .menu a {
+      background-color: transparent;
+      height: 50px;
+      padding: 15px;
+      color: white!important;
+      position: relative; /* Adicionado */
+    }
+  
+    .menu .commonLink::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #F0B648; /* Cor da linha */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .menu a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .contactOptionMenu{
+      border-radius: 12px;
+      background-color: #F0B648;
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .contactOptionMenu:hover{
+      background-color: white;
+  }
+
+  .contactLink{
+      color: white !important;
+  }
+
+  .contactLink:hover{
+      color: #F0B648 !important;
+  }
+
+  
+
+
+  }
+
+  /* Fim do CSS Header e Menu Desktop  */
+
+  
+
+  /* CSS da primeira chamada */
+
+  .first_background{
+    background-image: url(../img/first_background/rengoku.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .banner_overlay{
+    /* background-color com 50% de opacidade */
+    background-color: rgba(0, 0, 0, 0.8);
+
+  }
+
+  @media screen and (min-width: 960px){
+    .first_background{
+      height: 600px;
+    }
+
+    .banner_overlay:first-child{
+      height: 100%;
+    }
+  }
+
+
+  .first_call{
+    margin-top: 7%;
+    padding-left: 20px;
+  }
+
+  .first_call h1{
+    font-family: var(--font-main);
+    color: white;
+    font-size: var( --font-size-title);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .first_call p{
+    font-family: var(--font-main);
+    color: white;
+    font-size: clamp(16px, 3vw, 22px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  @media screen and (min-width: 960px){
+    .first_call h1{
+      margin-bottom: 50px;
+    }
+
+    .first_call p{
+      margin-bottom: 50px;
+    }
+  }
+
+  .btn_one{
+    width: 193px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 21px;
+    border: 1px solid #FFF;
+    background: #010101;
+    color: #fff;
+    font-family: var(--font-main);
+    margin-bottom: 50px;
+    font-size: clamp(16px, 2vw, 20px);
+
+  }
+
+  .btn_one:hover{
+      background-color: #F0B648;
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+  }
+
+
+  /*Primeira Chamada no Table */
+
+  @media screen and (min-width: 728px){
+    .btn_one{
+      width: 250px;
+      height: 40px;
+    }
+  }
+ 
+
+  /* Fim do CSS da primeira chamada */
+
+
+  /* Início do CSS da MAIN home Mobile */
+
+  main{
+    margin-top: 40px;
+  }
+
+   .about h2, .about p{
+    padding-left: 20px;
+  }
+
+  .about .box_one{
+    display: flex;
+    gap: 28px;
+  }
+
+  .box_one div{
+    display: flex;
+    gap: 17px;
+  }
+
+  .box_one div img{
+    width: 30px;
+  }
+
+  @media screen and (min-width: 728px){
+    .about .box_one{
+      display: flex;
+      align-items: center;
+      gap: 22%;
+    }
+
+    .box_one div{
+      gap: 30px;
+    }
+
+    .box_one div img{
+      width: 40px;
+    }
+  }
+
+  .box_one h2{
+    color: #000;
+    font-family: var(--font-main);
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+    .separator_orange{
+    margin-top: 12px;
+    width: 120px;
+    margin-left: 20px;
+    height: 4px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 24px;
+    background: #F0B648;
+  }
+
+   .about .separator_white{
+    margin-top: 12px;
+    margin-bottom: 14px;
+    width: 120px;
+    margin-left: 20px;
+    height: 4px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 24px;
+    background: #fff;
+  }
+
+  .about .perfil_box{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .about .leo_perfil{
+    width: 199px;
+    height: 199px;
+    flex-shrink: 0;
+    border-radius: 97px;
+    
+  }
+
+  .about .article_one p{
+    color: #000;
+    font-family: var(--font-main);
+    font-size: clamp(16px, 3vw, 18px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .article_one{
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+      margin-top: 30px;
+      gap: 10px;
+    }
+
+    .article_one p{
+      margin-top: 5%;
+    }
+
+    /* .article_one div{
+      width: 40%;
+    } */
+
+    .about .leo_perfil{
+      border-radius: 35px;
+      width: 300px;
+      height: 320px;
+    }
+
+    .perfil_box{
+      padding-left: 20px;
+    }
+
+    .about .article_one p{
+      text-indent: 14px;
+      text-align: left;
+
+    }
+  }
+
+  .about .article_two{
+    margin-top: 30px;
+    background-image: url(../img/first_background/killua.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .box_two{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+
+  .article_two h2{
+    width: 100%;
+    color: white;
+    font-family: var(--font-main);
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+   .article_two p{
+    width: 100%;
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: clamp(16px, 3vw, 18px);
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+
+  
+
+    /* Fim do CSS da MAIN home Mobile */
+
+    /* Início sessão Meu trabalho Mobile */
+
+    .my_work h2{
+        margin-top: 30px;
+        padding-left: 20px;
+        color: #000;
+        font-family: var(--font-main);
+        font-size: var(--font-size-title);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+        /* Biblioteca Swiper */
+            .swiper {
+                width: 300px;
+                height: 300px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+            }
+
+            :root {
+                --swiper-theme-color: #F0B648;
+            }
+
+            .swiper-slide{
+                border-radius: 10px;
+            }
+
+          
+
+    
+    .box_button{
+        display: flex;
+        justify-content: center;
+    }
+
+        
+    .btn_two{
+        width: 250px;
+        height: 40px;
+        border-radius: 21px;
+        border: 1px solid #000;
+        background: #FFF;
+        color: #000;
+        font-family: var(--font-main);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    
+    /* Swiper tablet*/
+
+    @media screen and (min-width: 728px) {
+     .my_work .swiper{
+        width: 95%;
+        height: 230px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+     }
+
+    }
+
+    
+    /* .swiper-slide{
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%; */
+      /* object-fit: cover; */
+    
+
+    
+
+    .works_home img{
+      width: 500px;
+    }
+        
+    /* Fim da sessão Meu trabalho Mobile */
+
+    /* Início da sessão de blog */
+    .custom_separator {
+        background-image: url(../img/trainee/gato_em_pele_artificial.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 200px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 960px){
+      .custom_separator{
+        height: 250;
+      }
+    }
+    
+    .custom_separator::after {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%; /* Adicione esta linha */
+       height: 100%; /* Adicione esta linha */
+       background-color: rgba(1, 1, 1, 0.7); /* Usando rgba para adicionar transparência */
+    }
+    
+    .blog h2{
+        padding-left: 20px;
+        color: #000;
+        font-family: var(--font-main);
+        font-size: var(--font-size-title);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .blog{
+      margin-bottom: 60px;
+    }
+
+    .card_post{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+ 
+
+    @media screen and (min-width: 728px) {
+
+      .card_post div{
+        width: 40%;
+      }
+      
+    }
+
+    @media screen and (min-width: 960px){
+
+      .card_post{
+        gap: 100px;
+      }
+
+      .card_post div{
+        width: 25%;
+      }
+    }
+    
+
+
+    .card_post img{
+      width: 313px;
+      height: 161px;
+      flex-shrink: 0;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      
+
+
+    }
+
+    .card_post .content{
+      width: 313px;
+      height: 230px;
+      flex-shrink: 0;
+      background: #FFF;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding-left: 20px;
+      
+    }
+      
+
+    .card_post .date{
+      color: #000;
+      font-family: var(--font-main);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 10px;
+    }
+
+    .card_post .text{
+      width: 90%;
+      margin-top: 10px;
+      color: #000;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .card_post h3{
+      margin-top: 10px;
+      color: #000;
+      font-family: var(--font-main);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+     
+    .btn_three{
+      margin-top: 30px;
+      width: 250px;
+      height: 40px;
+      border-radius: 21px;
+      border: 1px solid #000;
+      background: #FFF;
+      color: #000;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+
+    /* Fim da sessão de blog */
+
+
+  
+  /* CSS Footer */
+
+  footer{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: #191a1b;
+
+  }
+
+
+
+  footer h3{
+    color: white;
+    text-align: center;
+    text-decoration: #F0B648 underline;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: var(--font-main);
+    font-weight: bold;
+  }
+
+
+  footer p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--font-main);
+    margin-bottom: 15px;
+  }
+
+  footer nav ul li{
+    color: white;
+    text-align: center;
+    font-size: var(--font-main);
+    font-family: var(--font-main);
+    margin-bottom: 15px;
+  }
+
+  footer article{
+    margin-bottom: 30px;
+  }
+
+  .newsletter form{
+    text-align: center;
+  }
+
+  .newsletter input{
+    padding: 8px;
+    width: 60%;
+    border-radius: 6px;
+  }
+
+  @media screen and (min-width: 960px){
+    footer nav{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .newsletter input{
+      width: 100%;
+    }
+  }
+
+  .newsletter div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .newsletter div button{
+    width: 220px;
+    height: 35px;
+    border-radius: 21px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+
+  /* CSS da Página de PORTFÓLIO - Mobile */
+
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    left: 40vw; 
+    animation: slideUpDown 2s infinite alternate;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 728px){
+  .arrow{
+    left: 45vw; 
+  }
+}
+
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.portfolio figure{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.portfolio img{
+  border-radius: 6px;
+}
+
+.portfolio{
+  margin-bottom: 25px;
+}
