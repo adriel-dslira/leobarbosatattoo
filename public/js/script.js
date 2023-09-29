@@ -1,6 +1,19 @@
 const botaoMenu = document.querySelector('.menu_hamburguer');
 const menu = document.querySelector('.menu');
 
+let currentRoute = window.location.pathname;
+
+if (currentRoute === "/leotattoo/leobarbosatattoo/blog") {
+  // Adicione a classe "blog_background" ao elemento com a classe "first background"
+  let element = document.querySelector(".first_background");
+  element.classList.add("blog_background");
+
+  // Remova a classe "first background" do mesmo elemento
+  element.classList.remove("first_background");
+}
+
+
+
 botaoMenu.addEventListener('click', function(event) {
     event.preventDefault();
     menu.classList.toggle("menu-aberto");
@@ -43,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(changeWord, 2000);
 });
+
+
 
 
 

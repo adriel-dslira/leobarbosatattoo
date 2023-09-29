@@ -2,6 +2,8 @@
 use App\controllers\HomeController;
 use App\controllers\NotFoundController;
 use App\controllers\PortfolioController;
+use App\controllers\BlogController;
+use App\controllers\PostController;
 
 require_once './vendor/autoload.php';
 
@@ -19,9 +21,9 @@ if(isset($_GET['url'])){
             $portfolio->openPortfolio();
         break;
         
-        case "cadastrar":
-            //  $register = new RegisterController;
-            //  $register->openRegister();
+        case "blog":
+            $blog = new BlogController;
+            $blog->openBlog();
         break;
 
         case "register-user":

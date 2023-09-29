@@ -214,18 +214,27 @@ header{
     background-repeat: no-repeat;
   }
 
+  .blog_background{
+    background-image: url(../img/first_background/artificial_tattoo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .banner_overlay{
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  .banner_overlay:first-child{
+    height: 100%;
+  }
+
   @media screen and (min-width: 960px){
-    .first_background{
-      height: 600px;
+    .first_background, .blog_background{
+      height: 600px!important;
     }
 
-    .banner_overlay:first-child{
-      height: 100%;
-    }
+   
   }
 
 
@@ -495,6 +504,22 @@ header{
     margin-bottom: 28px;
   }
 
+  @media screen and (min-width: 1400px){
+    .about h2, .about p, .about .box_one{
+    padding-left: 20px;
+  }
+
+   .separator_orange{
+    margin-left: 40px;
+  } 
+
+  .perfil_box{
+    margin-left: 20px;
+  }
+
+
+}
+
   
 
     /* Fim do CSS da MAIN home Mobile */
@@ -727,7 +752,40 @@ header{
       margin-bottom: 30px;
     }
 
+    @media screen and (min-width: 1300px){
+      
+      .card_post{
+        gap: 100px;
+      }
 
+      .card_post div{
+        width: 26%;
+      }
+
+
+    .card_post img{
+      width: 350px;
+      height: 161px;
+      flex-shrink: 0;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      
+
+
+    }
+
+    .card_post .content{
+      width: 350px;
+      height: 230px;
+      flex-shrink: 0;
+      background: #FFF;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding-left: 20px;
+      
+    }
+
+  }
+
+    
     /* Fim da sessão de blog */
 
 
@@ -860,4 +918,109 @@ header{
 
 .portfolio{
   margin-bottom: 25px;
+}
+
+/* Fim do CSS Portfólio */
+
+/* Início do CSS da página de BLOG */
+ 
+.blog_background{
+  height: 350px;
+}
+
+.subject{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style: circle;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.subject a{
+  color: white;
+  font-family: var(--font-main);
+  font-size: var( --font-size-listBlog);
+  position: relative; 
+}
+
+.searchBlog{
+  margin-top: 20px;
+}
+
+  
+.searchBlog div{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+ .searchBlog input{
+  padding-left: 20px; 
+  height: 30px;
+  width: 270px;
+  background-color: transparent;
+  border: white 2px solid;
+  color: white;
+} 
+
+.searchBlog button{
+  height: 30px;
+  width: 60px;
+}
+
+@media screen and(min-width: 4000px){
+  .blog_background{
+    height: 450px;
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+
+ 
+  .subject a:hover::after{
+    transform: scaleX(1.2);
+  }
+  
+  .subject .commonLink::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F0B648; /* Cor da linha */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  .searchBlog button:hover{
+    cursor: pointer;
+  }
+
+  .subject{
+    gap: 100px;
+    margin-top: 70px;
+  }
+
+  .searchBlog{
+    margin-top: 70px;
+  }
+
+  .searchBlog input{
+    height: 40px;
+    width: 350px;
+  } 
+  
+  .searchBlog button{
+    height: 40px;
+    width: 60px;
+  }
+  
+  
 }
