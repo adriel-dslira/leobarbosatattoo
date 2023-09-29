@@ -46,9 +46,7 @@
 }
 
 @media screen and (min-width: 728px){
-  .word {
-    width: 90%;
-  }
+ 
 
   .limitator{
     width: 95%;
@@ -56,6 +54,22 @@
 
   .limitatorTwo{
     width: 94%;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .limitatorTwo{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .limitator{
+    width: 80%;
+  }
+
+  .word {
+    width: 85%;
   }
 }
 

@@ -133,7 +133,7 @@ header{
   }
 
   .menu_nav{
-    width: 60%;
+    width: 50%;
   } 
 
   .menu_hamburguer{
@@ -173,7 +173,7 @@ header{
     }
 
     .contactOptionMenu{
-      border-radius: 12px;
+      /* border-radius: 12px; */
       background-color: #F0B648;
       box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
   }
@@ -194,6 +194,12 @@ header{
 
 
   }
+  
+  @media screen and (min-width: 1400px){
+       header{
+        padding-left: 50px;
+    }
+  }
 
   /* Fim do CSS Header e Menu Desktop  */
 
@@ -209,9 +215,7 @@ header{
   }
 
   .banner_overlay{
-    /* background-color com 50% de opacidade */
     background-color: rgba(0, 0, 0, 0.8);
-
   }
 
   @media screen and (min-width: 960px){
@@ -228,6 +232,12 @@ header{
   .first_call{
     margin-top: 7%;
     padding-left: 20px;
+  }
+  
+  @media screen and (min-width: 1400px){
+    .first_call{
+      padding-left: 50px;
+    }
   }
 
   .first_call h1{
@@ -266,9 +276,9 @@ header{
     width: 193px;
     height: 32px;
     flex-shrink: 0;
-    border-radius: 21px;
+    /* border-radius: 21px; */
     border: 1px solid #FFF;
-    background: #010101;
+    background: #000000;
     color: #fff;
     font-family: var(--font-main);
     margin-bottom: 50px;
@@ -276,12 +286,10 @@ header{
 
   }
 
-  .btn_one:hover{
-      background-color: #F0B648;
-      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  .btn_one:hover, .btn_about:hover{
+      border: none;
       font-weight: bold;
   }
-
 
   /*Primeira Chamada no Table */
 
@@ -301,6 +309,7 @@ header{
   main{
     margin-top: 40px;
   }
+  
 
    .about h2, .about p{
     padding-left: 20px;
@@ -319,6 +328,17 @@ header{
   .box_one div img{
     width: 30px;
   }
+
+  .btn_about{
+    margin-top: 20px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    margin-left: 18px;
+  }
+ 
 
   @media screen and (min-width: 728px){
     .about .box_one{
@@ -380,9 +400,10 @@ header{
   .about .leo_perfil{
     width: 199px;
     height: 199px;
-    flex-shrink: 0;
-    border-radius: 97px;
-    
+    flex-shrink: 0;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .about .article_one p{
@@ -403,7 +424,7 @@ header{
       gap: 10px;
     }
 
-    .article_one p{
+    .article_one p:first-child{
       margin-top: 5%;
     }
 
@@ -412,9 +433,11 @@ header{
     } */
 
     .about .leo_perfil{
-      border-radius: 35px;
-      width: 300px;
-      height: 320px;
+      /* border-radius: 35px; */
+      width: 320px;
+      height: 340px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     .perfil_box{
@@ -426,18 +449,29 @@ header{
       text-align: left;
 
     }
+
+    
+  }
+
+  @media screen and (min-width: 1200px){
+    
+    .about .leo_perfil{
+      width: 250px;
+      height: 270px;
+    }
   }
 
   .about .article_two{
     margin-top: 30px;
-    background-image: url(../img/first_background/killua.jpeg);
-    background-size: contain;
+    background-image: url(../img/first_background/artificial_tattoo.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
   .box_two{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
   }
 
@@ -556,7 +590,7 @@ header{
 
     /* Início da sessão de blog */
     .custom_separator {
-        background-image: url(../img/trainee/gato_em_pele_artificial.jpg);
+        background-image: url(../img/trainee/gato_em_pele_artificial_auto_x2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;

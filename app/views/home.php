@@ -6,7 +6,7 @@
 
             <p class="animate-lettersText ">Projetos <span style="font-weight: 800;">exclusivos</span> feitos para você exibir por aí.</p>
 
-            <button class="btn_one animate-lettersButton"><a href="portfolio">Visualizar Portfólio</a></button>
+            <button class="btn_one animate-lettersButton"><a href="portfolio commonLink">Visualizar Portfólio</a></button>
         </div>
     </div>
 </section>
@@ -23,28 +23,17 @@
         </div>
         <span class="separator_orange animate-boxOne"></span>
         <article class="article_one animate-boxOne">
-            <div class="perfil_box"><img src="public/img/social/leotatuador.jpeg" alt="" class="leo_perfil"></div>
+            <div class="perfil_box"><img src="public/img/social/leotatuador.jpeg" alt="" class="leo_perfil"></div class="perfil_text">
                 <div class="limitator">
-                    <p class="word">Projetos  <span style="font-weight: 800;">exclusivos</span> feitos para você
-                    exibir por aí. Apaixonado por arte e criação desde
-                    a infância, decidi seguir a minha paixão
-                    em dar formas aos desenhos, na pele das
-                    pessoas.
-                    exibir por aí. Apaixonado por arte e criação desde
-                    a infância, decidi seguir a minha paixão
-                    em dar formas aos desenhos, na pele das
-                    pessoas.
-                    exibir por aí. Apaixonado por arte e criação desde
-                    a infância, decidi seguir a minha paixão
-                    em dar formas aos desenhos, na pele das
-                    pessoas.
+                    <p class="word">Olá, eu sou o  <span style="font-weight: 800;">Leonardo Barbosa</span>, tatuador profissional e apaixonado por arte e as formas de manifestá-la, seja na pele das pessoas ou no papel. Dediquei parte da minha vida a estudar o desenho, suas adaptações e formas para que eu possa deixar as pessoas mais felizes por gravarem em seus corpos uma linda representação do que elas amam, do que para elas tem algum significado ou aquilo que apenas as divertem.
                     </p>
+                    <button class="btn_about animate-lettersButton"><a href="">Quero conhecer!</a></button>
                 </div>
         </article>
 
         <article class="article_two">
             <div class="banner_overlay box_two">
-                <h2>A experiência de uma tatuagem comigo</h2>
+                <h2>A experiência de uma tattoo comigo</h2>
                 <span class="separator_white"></span>
                 <div class="limitatorTwo">
                     <p class="word">Projetos  <span style="font-weight: 800;">exclusivos</span> feitos para você
@@ -72,10 +61,16 @@
             <img src="public/img/works/killua.jpeg" alt=""  class="swiper-slide">    
             <img src="public/img/works/rengoku.jpeg" alt=""  class="swiper-slide">    
             <img src="public/img/works/dragon.jpeg" alt=""  class="swiper-slide"> 
-            <img src="public/img/works/sephirot.jpeg" alt=""  class="swiper-slide">   
-            <img src="public/img/works/rengoku.jpeg" alt=""  class="swiper-slide">    
-            <img src="public/img/works/dragon.jpeg" alt=""  class="swiper-slide"> 
-            <img src="public/img/works/sephirot.jpeg" alt=""  class="swiper-slide">  
+            <img src="public/img/works/gon.jpg" alt=""  class="swiper-slide">   
+            <img src="public/img/works/noiva_cadaver.png" alt=""  class="swiper-slide">    
+            <img src="public/img/works/sephirot.jpeg" alt=""  class="swiper-slide"> 
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide"> 
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide">
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide">
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide">
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide">
+            <img src="public/img/works/bloodborne.jpg" alt=""  class="swiper-slide">
+
         </div>
         
         <!-- If we need pagination -->
@@ -211,15 +206,15 @@
     loop: true,
     // slidesPerView: 3,
     // spaceBetween: 30,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
+    //    pagination: {
+    //      el: ".swiper-pagination",
+    //      clickable: true,
+    //    },
 
 
      // Verifica se a largura da janela é maior ou igual a 728 pixels
     slidesPerView: windowWidth >= 1200 ? 4 : windowWidth >= 728 ? 3 : 1,
-    spaceBetween: windowWidth >= 1200 ? 50 : windowWidth >= 728 ? 30 : 0,
+    spaceBetween: windowWidth >= 1200 ? 60 : windowWidth >= 728 ? 30 : 0,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
